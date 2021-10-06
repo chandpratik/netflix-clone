@@ -1,4 +1,5 @@
 import React from 'react';
+import GithubCorner from 'react-github-corner';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 import { Home, Browse, Signin, Signup } from './pages';
@@ -35,6 +36,13 @@ function App() {
           <Home />
         </IsUserRedirect>
       </Switch>
+      <GithubCorner
+        href="https://github.com/chandpratik/netflix-clone"
+        bannerColor="#F40612"
+        octoColor="#fff"
+        size={70}
+        direction="right"
+      />
     </Router>
   );
 }
